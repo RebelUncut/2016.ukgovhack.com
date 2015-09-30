@@ -50,6 +50,8 @@ header {
         margin-left: 0.375em;
         color: #59595B;
         font-weight: bold; }
+        header ul li.register a:hover {
+          background: #c0b91d; }
 
 section.hero {
   float: left;
@@ -75,7 +77,9 @@ section.hero {
       display: block;
       margin-right: 4.82916%;
       width: 100%;
-      margin-top: 2em; }
+      margin-top: 2em;
+      background: white;
+      padding: 2em; }
       section.hero .content .partners:last-child {
         margin-right: 0; }
       section.hero .content .partners img {
@@ -106,11 +110,13 @@ section.hero {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block; }
+    section.hero a.register:hover {
+      background: #c0b91d; }
   section.hero .credit {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: white;
+    background: #E3DD46;
     color: #59595B;
     padding: 0.5em; }
 
