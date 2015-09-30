@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  font-family: "brandon-grotesque", sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #377F90;
+  text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+header {
+  background: #377F90;
+  font-size: 1em; }
+  header a {
+    text-decoration: none;
+    text-transform: uppercase; }
+  header a.brand {
+    display: inline-block;
+    padding: 0.75em;
+    background: #224e59; }
+    header a.brand h1 {
+      display: inline;
+      color: white;
+      font-size: inherit; }
+  header ul {
+    display: inline-block;
+    padding-left: 0;
+    margin: 0;
+    float: right; }
+    header ul li {
+      display: inline-block; }
+      header ul li a {
+        padding: 0.75em 0.375em;
+        color: white;
+        display: block; }
+      header ul li.register a {
+        padding: 0.75em;
+        background: #E3DD46;
+        margin-left: 0.375em;
+        color: #59595B;
+        font-weight: bold; }
+
+section.hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: url(/img/hero.jpg) no-repeat center bottom scroll;
+  background-size: cover;
+  padding: 3em;
+  min-height: 75vh;
+  position: relative; }
+  section.hero:last-child {
+    margin-right: 0; }
+  section.hero .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    section.hero .content:last-child {
+      margin-right: 0; }
+    section.hero .content .partners {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      margin-top: 2em; }
+      section.hero .content .partners:last-child {
+        margin-right: 0; }
+      section.hero .content .partners img {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 30.11389%; }
+        section.hero .content .partners img:last-child {
+          margin-right: 0; }
+  section.hero .box {
+    background: white;
+    padding: 1.5em;
+    margin-bottom: 2em; }
+    section.hero .box * {
+      color: #59595B; }
+  section.hero h1 {
+    text-transform: uppercase; }
+  section.hero h2 {
+    margin-bottom: 0.25rem; }
+  section.hero p {
+    margin-bottom: 0; }
+  section.hero a.register {
+    background: #E3DD46;
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #59595B;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block; }
+  section.hero .credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    color: #59595B;
+    padding: 0.5em; }
+
+.about {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: #377F90; }
+  .about:last-child {
+    margin-right: 0; }
+  .about .content {
+    max-width: 68rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    text-align: center;
+    color: white;
+    font-size: 1.25em; }
+    .about .content::after {
+      clear: both;
+      content: "";
+      display: table; }
+
+ /*# sourceMappingURL=main.css.map */
