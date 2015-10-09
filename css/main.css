@@ -19,6 +19,12 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+section > h1 {
+  text-align: center;
+  color: #377F90;
+  font-size: 2.5rem;
+  margin-bottom: 1em; }
+
 header {
   background: #377F90;
   font-size: 1em; }
@@ -72,24 +78,8 @@ section.hero {
     width: 48.82117%; }
     section.hero .content:last-child {
       margin-right: 0; }
-    section.hero .content .partners {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 100%;
-      margin-top: 2em;
-      background: white;
-      padding: 1.5em; }
-      section.hero .content .partners:last-child {
-        margin-right: 0; }
-      section.hero .content .partners img {
-        float: left;
-        display: block;
-        margin-right: 4.82916%;
-        width: 30.11389%; }
-        section.hero .content .partners img:last-child {
-          margin-right: 0; }
   section.hero .box {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: white;
     padding: 1.5em;
     margin-bottom: 2em; }
@@ -101,15 +91,25 @@ section.hero {
     margin-bottom: 0.25rem; }
   section.hero p {
     margin-bottom: 0; }
+  section.hero .partners .logo {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    section.hero .partners .logo:last-child {
+      margin-right: 0; }
+    section.hero .partners .logo img {
+      width: 100%; }
   section.hero a.register {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #E3DD46;
-    font-size: 1.25em;
     padding: 0.5em 1em;
     text-decoration: none;
     color: #59595B;
     text-transform: uppercase;
     font-weight: bold;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.25em; }
     section.hero a.register:hover {
       background: #c0b91d; }
   section.hero .credit {
@@ -140,5 +140,96 @@ section.hero {
       clear: both;
       content: "";
       display: table; }
+
+#faq, #challenges {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+  overflow: auto; }
+  #faq::after, #challenges::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #faq ul, #challenges ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0; }
+    #faq ul:last-child, #challenges ul:last-child {
+      margin-right: 0; }
+    #faq ul li, #challenges ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      list-style-type: none;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      color: #59595B; }
+      #faq ul li:last-child, #challenges ul li:last-child {
+        margin-right: 0; }
+      #faq ul li:first-child, #challenges ul li:first-child {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        #faq ul li:first-child:last-child, #challenges ul li:first-child:last-child {
+          margin-right: 0; }
+      #faq ul li:nth-child(3n+2), #challenges ul li:nth-child(3n+2) {
+        margin-right: 0; }
+      #faq ul li p:last-child, #challenges ul li p:last-child {
+        margin-bottom: 0; }
+
+#challenges h1 {
+  margin-bottom: 0.5em; }
+
+#challenges > h2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.5em; }
+  #challenges > h2:last-child {
+    margin-right: 0; }
+
+#challenges ul li:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  #challenges ul li:first-child:last-child {
+    margin-right: 0; }
+
+#challenges ul li:nth-child(3n+2):nth-child(n) {
+  margin-right: 2.35765%; }
+
+#challenges ul li:nth-child(3n+2):nth-child(n+1) {
+  clear: none; }
+
+#sign-up-block {
+  background: #377F90;
+  padding: 2em; }
+  #sign-up-block h2 {
+    color: white;
+    text-align: center; }
+    #sign-up-block h2 a {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      background: #E3DD46;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #59595B;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-left: 1em; }
+      #sign-up-block h2 a:hover {
+        background: #c0b91d; }
 
  /*# sourceMappingURL=main.css.map */
