@@ -145,7 +145,7 @@ section.hero {
   max-width: 68rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
   overflow: auto; }
   #faq::after, #challenges::after {
     clear: both;
@@ -184,33 +184,33 @@ section.hero {
       #faq ul li p:last-child, #challenges ul li p:last-child {
         margin-bottom: 0; }
 
-#challenges h1 {
-  margin-bottom: 0.5em; }
-
-#challenges > h2 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 1.5em; }
-  #challenges > h2:last-child {
-    margin-right: 0; }
-
-#challenges ul li:first-child {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  #challenges ul li:first-child:last-child {
-    margin-right: 0; }
-
-#challenges ul li:nth-child(3n+2):nth-child(n) {
-  margin-right: 2.35765%; }
-
-#challenges ul li:nth-child(3n+2):nth-child(n+1) {
-  clear: none; }
+#challenges {
+  padding-bottom: 3rem; }
+  #challenges h1 {
+    margin-bottom: 0.5em; }
+  #challenges > h2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5em; }
+    #challenges > h2:last-child {
+      margin-right: 0; }
+  #challenges ul li img {
+    height: 2rem; }
+  #challenges ul li:first-child {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #challenges ul li:first-child:last-child {
+      margin-right: 0; }
+  #challenges ul li:nth-child(3n+2):nth-child(n) {
+    margin-right: 2.35765%; }
+  #challenges ul li:nth-child(3n+2):nth-child(n+1) {
+    clear: none; }
 
 #sign-up-block {
   background: #377F90;
@@ -231,5 +231,59 @@ section.hero {
       margin-left: 1em; }
       #sign-up-block h2 a:hover {
         background: #c0b91d; }
+
+#venue-schedule {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #venue-schedule:last-child {
+    margin-right: 0; }
+  #venue-schedule #venue,
+  #venue-schedule #schedule {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    width: 50%;
+    margin-right: 0;
+    padding: 2em; }
+    #venue-schedule #venue:last-child,
+    #venue-schedule #schedule:last-child {
+      margin-right: 0; }
+
+#venue {
+  background: #E3DD46; }
+  #venue * {
+    color: #59595B; }
+  #venue > h1 {
+    margin-bottom: 1rem; }
+  #venue > h2 {
+    text-align: center;
+    margin-bottom: 1rem; }
+  #venue .travel > * {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+    text-align: center; }
+    #venue .travel > *:last-child {
+      margin-right: 0; }
+    #venue .travel > * h2 {
+      text-align: center; }
+    #venue .travel > * p {
+      text-align: center;
+      display: inline; }
+
+#schedule {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background: #377F90; }
+  #schedule:last-child {
+    margin-right: 0; }
+  #schedule h1 {
+    color: white; }
 
  /*# sourceMappingURL=main.css.map */
