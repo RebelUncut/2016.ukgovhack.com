@@ -1,0 +1,49 @@
+section.hero {
+	@include span-columns(12);
+	background: url(../img/hero.jpg) no-repeat center bottom scroll; 
+	background-size: cover;
+	padding: 3em;
+	min-height: 75vh;
+	position: relative;
+	.content {
+		@include span-columns(6 of 12);
+	}
+	.box {
+		@include material-box;
+		background: white;
+		padding: 1.5em;
+		margin-bottom: 2em;
+		* {
+			color: $grey-dark;
+		}
+	}
+	h1 {
+		text-transform: uppercase;
+	}
+	h2 {
+		margin-bottom: 0.25rem;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.partners {
+		.logo {
+			@include span-columns(2 of 6);
+			img {
+				width: 100%;
+			}
+		}
+	}
+	a.register {
+		@include material-button;
+		font-size: 1.25em;
+	}
+	.credit {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: $secondary;
+		color: $grey-dark;
+		padding: 0.5em;
+	}
+}

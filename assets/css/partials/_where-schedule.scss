@@ -1,0 +1,119 @@
+#venue-schedule {
+	@include span-columns(12);
+	#venue,
+	#schedule {
+		@include span-columns(6 of 12);
+		width: 50%;
+		margin-right: 0;
+		padding: 2em;
+		> h1 {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+#venue {
+	background: $accent;
+	> h1 {
+		color: white;
+	}
+	> h2 {
+		text-align: center;
+		color: white;
+		margin-bottom: 1rem;
+		padding: 0.5em;
+	}
+	.travel {
+		> * {
+			padding: 1em;
+			text-align: center;
+			margin-bottom: 2em;
+			background: white;
+			@include material-box;
+			h2 {
+				text-align: center;
+				margin-bottom: 0.5em;
+			}
+			p {
+				text-align: center;
+				display: inline;
+				font-size: 1.25em;
+				margin-top: 1em;
+			}
+		}
+		span {
+			display: inline-block;
+			padding: 0.125em 0.5em;
+			font-size: 0.8em;
+			background: black;
+			margin-left: 0.5em;
+			color: white;
+			font-family: $font-main;
+			&.c {
+				background: #F9CF42;
+				color: $grey-dark;
+			}
+			&.d {
+				background: #3A7F43;
+			}
+			&.v {
+				background: #429ED7;
+			}
+			&.b {
+				background: #DB4B37;
+			}
+		}
+	}
+	#gmap_canvas {
+		width: 100% !important;
+		margin: 0;
+		@include material-box;
+	}
+}
+
+#schedule {
+	@include span-columns(6 of 12);
+	nav {
+		h2 {
+			display: none;
+			&.active {
+				@include material-button($accent, white);
+				font-size: 1.25em;
+				width: 100%;
+				text-align: center;
+				text-transform: capitalize;
+			}
+		}
+	}
+	ul {
+		display: none;
+		padding-left: 0;
+		&.active {
+			display: block;
+		}
+		h2.day {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			text-align: center;
+		}
+		li {
+			list-style-type: none;
+			padding: 1em;
+			@include material-box;
+			margin-bottom: 1em;
+			@include span-columns(6 of 12);
+			&:nth-child(2n+1) {
+				@include omega;
+			}
+			h2 {
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
