@@ -109,9 +109,15 @@ section.hero {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
+    position: relative;
     font-size: 1.25em; }
     section.hero a.register:hover {
-      background: #c0b91d; }
+      background: #c0b91d;
+      cursor: pointer; }
+    section.hero a.register:active {
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+      top: 4px;
+      position: relative; }
   section.hero .credit {
     position: absolute;
     bottom: 0;
@@ -227,10 +233,16 @@ section.hero {
       text-transform: uppercase;
       font-weight: bold;
       display: inline-block;
+      position: relative;
       font-size: 0.75em;
       margin-left: 1em; }
       #sign-up-block h2 a:hover {
-        background: #c0b91d; }
+        background: #c0b91d;
+        cursor: pointer; }
+      #sign-up-block h2 a:active {
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+        top: 4px;
+        position: relative; }
 
 #venue-schedule {
   float: left;
@@ -251,39 +263,112 @@ section.hero {
     #venue-schedule #venue:last-child,
     #venue-schedule #schedule:last-child {
       margin-right: 0; }
+    #venue-schedule #venue > h1,
+    #venue-schedule #schedule > h1 {
+      margin-bottom: 1rem; }
 
 #venue {
-  background: #E3DD46; }
-  #venue * {
-    color: #59595B; }
+  background: #377F90; }
   #venue > h1 {
-    margin-bottom: 1rem; }
+    color: white; }
   #venue > h2 {
     text-align: center;
-    margin-bottom: 1rem; }
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0.5em; }
   #venue .travel > * {
-    float: left;
-    display: block;
-    margin-right: 4.82916%;
-    width: 47.58542%;
-    text-align: center; }
-    #venue .travel > *:last-child {
-      margin-right: 0; }
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #venue .travel > * h2 {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0.5em; }
     #venue .travel > * p {
       text-align: center;
-      display: inline; }
+      display: inline;
+      font-size: 1.25em;
+      margin-top: 1em; }
+  #venue .travel span {
+    display: inline-block;
+    padding: 0.125em 0.5em;
+    font-size: 0.8em;
+    background: black;
+    margin-left: 0.5em;
+    color: white;
+    font-family: "brandon-grotesque", sans-serif; }
+    #venue .travel span.c {
+      background: #F9CF42;
+      color: #59595B; }
+    #venue .travel span.d {
+      background: #3A7F43; }
+    #venue .travel span.v {
+      background: #429ED7; }
+    #venue .travel span.b {
+      background: #DB4B37; }
+  #venue #gmap_canvas {
+    width: 100% !important;
+    margin: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 #schedule {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  background: #377F90; }
+  width: 48.82117%; }
   #schedule:last-child {
     margin-right: 0; }
-  #schedule h1 {
-    color: white; }
+  #schedule nav h2 {
+    display: none; }
+    #schedule nav h2.active {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      background: #377F90;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+      font-size: 1.25em;
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize; }
+      #schedule nav h2.active:hover {
+        background: #224e59;
+        cursor: pointer; }
+      #schedule nav h2.active:active {
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+        top: 4px;
+        position: relative; }
+  #schedule ul {
+    display: none;
+    padding-left: 0; }
+    #schedule ul.active {
+      display: block; }
+    #schedule ul h2.day {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center; }
+    #schedule ul li {
+      list-style-type: none;
+      padding: 1em;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 1em;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #schedule ul li:last-child {
+        margin-right: 0; }
+      #schedule ul li:nth-child(2n+1) {
+        margin-right: 0; }
+      #schedule ul li h2 {
+        text-align: center; }
+      #schedule ul li p {
+        text-align: center; }
+        #schedule ul li p:last-child {
+          margin-bottom: 0; }
 
  /*# sourceMappingURL=main.css.map */
