@@ -19,7 +19,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
-section > h1 {
+section > h1,
+section > .wrapper > h1 {
   text-align: center;
   color: #377F90;
   font-size: 2.5rem;
@@ -59,7 +60,7 @@ header {
         header ul li.register a:hover {
           background: #c0b91d; }
 
-section.hero {
+#hero {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -69,38 +70,38 @@ section.hero {
   padding: 3em;
   min-height: 75vh;
   position: relative; }
-  section.hero:last-child {
+  #hero:last-child {
     margin-right: 0; }
-  section.hero .content {
+  #hero .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    section.hero .content:last-child {
+    #hero .content:last-child {
       margin-right: 0; }
-  section.hero .box {
+  #hero .box {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: white;
     padding: 1.5em;
     margin-bottom: 2em; }
-    section.hero .box * {
+    #hero .box * {
       color: #59595B; }
-  section.hero h1 {
+  #hero h1 {
     text-transform: uppercase; }
-  section.hero h2 {
+  #hero h2 {
     margin-bottom: 0.25rem; }
-  section.hero p {
+  #hero p {
     margin-bottom: 0; }
-  section.hero .partners .logo {
+  #hero .partners .logo {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 30.11389%; }
-    section.hero .partners .logo:last-child {
+    #hero .partners .logo:last-child {
       margin-right: 0; }
-    section.hero .partners .logo img {
+    #hero .partners .logo img {
       width: 100%; }
-  section.hero a.register {
+  #hero a.register {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #E3DD46;
     padding: 0.5em 1em;
@@ -111,14 +112,14 @@ section.hero {
     display: inline-block;
     position: relative;
     font-size: 1.25em; }
-    section.hero a.register:hover {
+    #hero a.register:hover {
       background: #c0b91d;
       cursor: pointer; }
-    section.hero a.register:active {
+    #hero a.register:active {
       box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
       top: 4px;
       position: relative; }
-  section.hero .credit {
+  #hero .credit {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -126,23 +127,32 @@ section.hero {
     color: #59595B;
     padding: 0.5em; }
 
-.about {
+@media screen and (max-width: 960px) {
+  #hero .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    #hero .content:last-child {
+      margin-right: 0; } }
+
+#about {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   background: #377F90; }
-  .about:last-child {
+  #about:last-child {
     margin-right: 0; }
-  .about .content {
+  #about .content {
     max-width: 68rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 3em;
+    padding: 3rem;
     text-align: center;
     color: white;
     font-size: 1.25em; }
-    .about .content::after {
+    #about .content::after {
       clear: both;
       content: "";
       display: table; }
@@ -244,44 +254,33 @@ section.hero {
         top: 4px;
         position: relative; }
 
-#venue-schedule {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  #venue-schedule:last-child {
-    margin-right: 0; }
-  #venue-schedule #venue,
-  #venue-schedule #schedule {
+#venue {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 3rem 0 3rem; }
+  #venue::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #venue > h1 {
+    margin-bottom: 1rem; }
+  #venue > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0.5em; }
+  #venue .travel > * {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    width: 50%;
-    margin-right: 0;
-    padding: 2em; }
-    #venue-schedule #venue:last-child,
-    #venue-schedule #schedule:last-child {
-      margin-right: 0; }
-    #venue-schedule #venue > h1,
-    #venue-schedule #schedule > h1 {
-      margin-bottom: 1rem; }
-
-#venue {
-  background: #377F90; }
-  #venue > h1 {
-    color: white; }
-  #venue > h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 1rem;
-    padding: 0.5em; }
-  #venue .travel > * {
     padding: 1em;
     text-align: center;
     margin-bottom: 2em;
     background: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #venue .travel > *:last-child {
+      margin-right: 0; }
     #venue .travel > * h2 {
       text-align: center;
       margin-bottom: 0.5em; }
@@ -308,67 +307,53 @@ section.hero {
     #venue .travel span.b {
       background: #DB4B37; }
   #venue #gmap_canvas {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
     width: 100% !important;
-    margin: 0;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 6rem; }
+    #venue #gmap_canvas:last-child {
+      margin-right: 0; }
 
-#schedule {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-  #schedule:last-child {
-    margin-right: 0; }
-  #schedule nav h2 {
-    display: none; }
-    #schedule nav h2.active {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      background: #377F90;
-      padding: 0.5em 1em;
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      display: inline-block;
-      position: relative;
-      font-size: 1.25em;
-      width: 100%;
-      text-align: center;
-      text-transform: capitalize; }
-      #schedule nav h2.active:hover {
-        background: #224e59;
-        cursor: pointer; }
-      #schedule nav h2.active:active {
-        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
-        top: 4px;
-        position: relative; }
-  #schedule ul {
-    display: none;
-    padding-left: 0; }
-    #schedule ul.active {
-      display: block; }
-    #schedule ul h2.day {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      text-align: center; }
-    #schedule ul li {
-      list-style-type: none;
-      padding: 1em;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      margin-bottom: 1em;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      #schedule ul li:last-child {
-        margin-right: 0; }
-      #schedule ul li:nth-child(2n+1) {
-        margin-right: 0; }
-      #schedule ul li h2 {
-        text-align: center; }
-      #schedule ul li p {
-        text-align: center; }
-        #schedule ul li p:last-child {
-          margin-bottom: 0; }
+#slack {
+  background: #377F90;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  #slack * {
+    color: white;
+    text-align: center; }
+  #slack .wrapper {
+    max-width: 68rem;
+    margin-left: auto;
+    margin-right: auto; }
+    #slack .wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+
+#register {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem; }
+  #register::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #register iframe {
+    width: 100%;
+    height: 310px; }
+
+#footer {
+  width: 100%;
+  background: #E3DD46; }
+  #footer * {
+    color: #59595B; }
+  #footer p {
+    padding: 1em;
+    margin: 0;
+    text-align: center; }
 
  /*# sourceMappingURL=main.css.map */
