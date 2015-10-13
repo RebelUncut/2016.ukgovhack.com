@@ -1,9 +1,9 @@
-.about {
+#about {
 	@include span-columns(12);
 	background: $accent;
 	.content {
 		@include outer-container;
-		padding: 3em;
+		padding: 3rem;
 		text-align: center;
 		color: white;
 		font-size: 1.25em;

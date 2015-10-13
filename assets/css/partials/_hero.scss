@@ -1,4 +1,4 @@
-section.hero {
+#hero {
 	@include span-columns(12);
 	background: url(../img/hero.jpg) no-repeat center bottom scroll; 
 	background-size: cover;
@@ -45,5 +45,13 @@ section.hero {
 		background: $secondary;
 		color: $grey-dark;
 		padding: 0.5em;
+	}
+}
+
+@media screen and (max-width: $desktop) {
+	#hero {
+		.content {
+			@include span-columns(8 of 12);
+		}
 	}
 }

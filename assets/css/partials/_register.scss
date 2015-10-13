@@ -1,0 +1,8 @@
+#register {
+	@include outer-container;
+	padding: 3rem;
+	iframe {
+		width: 100%;
+    	height: 310px;
+	}
+}

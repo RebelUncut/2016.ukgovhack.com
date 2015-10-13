@@ -10,6 +10,8 @@ $secondary__dark: darken($secondary, 15%);
 
 $font-main: "brandon-grotesque", sans-serif;
 
+$desktop: 960px;
+
 @mixin material-box {
 	box-shadow: 0  3px  6px rgba(#000, 0.16), 
 				0  3px  6px rgba(#000, 0.23);
@@ -44,7 +46,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-section > h1 {
+section > h1,
+section > .wrapper > h1 {
 	text-align: center;
 	color: $teal;
 	font-size: 2.5rem;
