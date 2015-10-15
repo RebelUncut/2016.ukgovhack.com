@@ -1,4 +1,4 @@
-$("#faq li").matchHeight();
+$("#faq li, #challenges li, #data li, #venue .travel > *").matchHeight();
 
 $("#schedule nav h2").click(function() {
 	var clickedItem = $(this).attr("id");

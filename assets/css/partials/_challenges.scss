@@ -14,11 +14,13 @@
 		img {
 			height: 2rem;
 		}
+		h3 {
+			font-size: 26px;
+		}
+		@include span-columns(6 of 12);
 		&:first-child {
-			@include span-columns(4 of 12);
+			@include span-columns(6 of 12);
 		}
-		&:nth-child(3n+2) {
-			@include omega-reset(n);
-		}
+		
 	}
 }
