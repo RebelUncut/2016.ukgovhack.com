@@ -34,9 +34,14 @@
 			}
 		}
 	}
-	a.register {
+	a.register,
+	a.video {
 		@include material-button;
 		font-size: 1.25em;
+	}
+	a.video {
+		margin-left: 1.5em;
+		@include material-button($accent, white);
 	}
 	.credit {
 		position: absolute;
