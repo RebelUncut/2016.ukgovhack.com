@@ -214,19 +214,24 @@ header {
     margin-bottom: 1.5em; }
     #challenges > h2:last-child {
       margin-right: 0; }
-  #challenges ul li img {
-    height: 2rem; }
-  #challenges ul li:first-child {
+  #challenges ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
-    #challenges ul li:first-child:last-child {
+    width: 48.82117%; }
+    #challenges ul li img {
+      height: 2rem; }
+    #challenges ul li h3 {
+      font-size: 26px; }
+    #challenges ul li:last-child {
       margin-right: 0; }
-  #challenges ul li:nth-child(3n+2):nth-child(n) {
-    margin-right: 2.35765%; }
-  #challenges ul li:nth-child(3n+2):nth-child(n+1) {
-    clear: none; }
+    #challenges ul li:first-child {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #challenges ul li:first-child:last-child {
+        margin-right: 0; }
 
 #sign-up-block {
   background: #377F90;
@@ -345,6 +350,53 @@ header {
   #register iframe {
     width: 100%;
     height: 310px; }
+
+#data {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto; }
+  #data::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #data h1 {
+    margin-top: 1em; }
+  #data h2 {
+    color: #59595B;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5em; }
+  #data ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0; }
+    #data ul:last-child {
+      margin-right: 0; }
+    #data ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      list-style-type: none;
+      padding: 1.5em;
+      margin-bottom: 1.5em; }
+      #data ul li:last-child {
+        margin-right: 0; }
+      #data ul li:nth-child(3n) {
+        margin-right: 0; }
+      #data ul li:nth-child(3n+1) {
+        clear: left; }
+      #data ul li a {
+        color: #59595B;
+        text-decoration: none; }
+        #data ul li a h3 {
+          color: #377F90; }
+      #data ul li p:last-child {
+        margin-bottom: 0; }
 
 #footer {
   width: 100%;
