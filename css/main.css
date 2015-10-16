@@ -525,6 +525,7 @@ header {
       position: relative; }
   #hero a.video {
     font-size: 1.25em;
+    margin-bottom: 1.5em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #377F90;
     padding: 0.5em 1em;
@@ -901,10 +902,21 @@ header {
     font-size: 1.5em; } }
 
 @media screen and (max-width: 600px) {
+  section > h1 {
+    font-size: 2em; }
   header ul {
     display: none; }
-  #hero h1 {
-    font-size: 1.5em; }
+  #hero * {
+    font-size: 1em; }
+  #hero a {
+    font-size: 1em !important;
+    text-align: center;
+    display: block;
+    width: 100%; }
+    #hero a.video {
+      margin-bottom: 2em; }
+  #about .content {
+    font-size: 1em; }
   #faq ul li, #challenges ul li {
     float: left;
     display: block;
@@ -914,16 +926,19 @@ header {
     #faq ul li:last-child, #challenges ul li:last-child {
       margin-right: 0; }
     #faq ul li h2, #challenges ul li h2 {
-      cursor: pointer; }
-  #data ul li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    width: 100% !important; }
-    #data ul li:last-child {
-      margin-right: 0; }
-    #data ul li p {
-      display: none; } }
+      cursor: pointer;
+      font-size: 1em; }
+  #challenges h2 {
+    font-size: 1em; }
+  #challenges ul li img {
+    height: 1.5rem; }
+  #sign-up-block {
+    display: none; }
+  #data {
+    display: none; }
+  #venue {
+    display: none; }
+  #slack h1 {
+    font-size: 1em; } }
 
  /*# sourceMappingURL=main.css.map */
