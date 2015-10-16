@@ -24,3 +24,25 @@ $("#schedule nav h2").click(function() {
 	$("#schedule ul").removeClass("active");
 	$("#schedule ul").filter("#" + clickedItem).addClass("active");
 });
+
+// Res
+
+$(document).ready(function() {
+    checkSize();
+    $(window).resize(checkSize);
+});
+
+function checkSize(){
+    if ($("header ul").css("display") == "none" ){
+
+        $("#faq li p").slideUp();
+
+        $("#faq li h2").click(function() {
+            $(this).parent().children("p").slideDown("fast");
+        });
+
+       
+
+
+    }
+}

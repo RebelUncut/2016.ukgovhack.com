@@ -503,17 +503,7 @@ header {
     margin-bottom: 0.25rem; }
   #hero p {
     margin-bottom: 0; }
-  #hero .partners .logo {
-    float: left;
-    display: block;
-    margin-right: 4.82916%;
-    width: 30.11389%; }
-    #hero .partners .logo:last-child {
-      margin-right: 0; }
-    #hero .partners .logo img {
-      width: 100%; }
-  #hero a.register,
-  #hero a.video {
+  #hero a.register {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #E3DD46;
     padding: 0.5em 1em;
@@ -523,18 +513,18 @@ header {
     font-weight: bold;
     display: inline-block;
     position: relative;
-    font-size: 1.25em; }
-    #hero a.register:hover,
-    #hero a.video:hover {
+    font-size: 1.25em;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em; }
+    #hero a.register:hover {
       background: #c0b91d;
       cursor: pointer; }
-    #hero a.register:active,
-    #hero a.video:active {
+    #hero a.register:active {
       box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
       top: 4px;
       position: relative; }
   #hero a.video {
-    margin-left: 1.5em;
+    font-size: 1.25em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #377F90;
     padding: 0.5em 1em;
@@ -756,8 +746,7 @@ header {
 
 #slack {
   background: #377F90;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding: 3rem; }
   #slack * {
     color: white;
     text-align: center; }
@@ -786,7 +775,8 @@ header {
 #data {
   max-width: 68rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 3rem; }
   #data::after {
     clear: both;
     content: "";
@@ -839,5 +829,101 @@ header {
     padding: 1em;
     margin: 0;
     text-align: center; }
+
+@media screen and (max-width: 900px) {
+  header a.brand {
+    display: block;
+    text-align: center; }
+  header ul {
+    background: #377F90;
+    width: 100%;
+    text-align: center; }
+    header ul li.register {
+      display: none; }
+  #hero .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #hero .content:last-child {
+      margin-right: 0; }
+  #faq ul li, #challenges ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #faq ul li:last-child, #challenges ul li:last-child {
+      margin-right: 0; }
+    #faq ul li:first-child, #challenges ul li:first-child {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #faq ul li:first-child:last-child, #challenges ul li:first-child:last-child {
+        margin-right: 0; }
+    #faq ul li:nth-child(3n+2):nth-child(n), #challenges ul li:nth-child(3n+2):nth-child(n) {
+      margin-right: 2.35765%; }
+    #faq ul li:nth-child(3n+2):nth-child(n+1), #challenges ul li:nth-child(3n+2):nth-child(n+1) {
+      clear: none; }
+    #faq ul li:nth-child(2n+3), #challenges ul li:nth-child(2n+3) {
+      margin-right: 0;
+      margin-right: 0 !important; }
+  #challenges ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #challenges ul li:last-child {
+      margin-right: 0; }
+  #data ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #data ul li:last-child {
+      margin-right: 0; }
+    #data ul li:nth-child(3n) {
+      margin-right: 2.35765%; }
+    #data ul li:nth-child(3n+1) {
+      clear: none; }
+    #data ul li:nth-child(2n) {
+      margin-right: 0; }
+    #data ul li:nth-child(2n+1) {
+      clear: left; }
+  #venue .travel > * {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #venue .travel > *:last-child {
+      margin-right: 0; }
+  #slack h1 {
+    font-size: 1.5em; } }
+
+@media screen and (max-width: 600px) {
+  header ul {
+    display: none; }
+  #hero h1 {
+    font-size: 1.5em; }
+  #faq ul li, #challenges ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    width: 100% !important; }
+    #faq ul li:last-child, #challenges ul li:last-child {
+      margin-right: 0; }
+    #faq ul li h2, #challenges ul li h2 {
+      cursor: pointer; }
+  #data ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    width: 100% !important; }
+    #data ul li:last-child {
+      margin-right: 0; }
+    #data ul li p {
+      display: none; } }
 
  /*# sourceMappingURL=main.css.map */
