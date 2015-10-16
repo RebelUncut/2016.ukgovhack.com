@@ -1,0 +1,76 @@
+// Header
+
+	header {
+		a.brand {
+			display: block;
+			text-align: center;
+		}
+		ul {
+			background: $accent;
+			width: 100%;
+			text-align: center;
+			li {
+				&.register {
+					display: none;
+				}
+			}
+		}
+	}
+
+// Hero
+
+	#hero .content {
+		@include span-columns(12);
+	}
+
+// FAQ 
+
+	#faq {
+		ul li {
+			@include span-columns(6 of 12);
+			&:first-child {
+				@include span-columns(12);
+			}
+			&:nth-child(3n+2) {
+				@include omega-reset(n);
+			}
+			&:nth-child(2n+3) {
+				@include omega;
+				margin-right: 0 !important;
+			}
+		}
+	}
+
+// Challenges
+
+	#challenges {
+		ul li {
+			@include span-columns(12);
+		}
+	}
+
+// Data 
+
+	#data {
+		ul li {
+			@include span-columns(6 of 12);
+			@include omega-reset(3n);
+			@include omega(2n);
+		}
+	}
+
+// Venue 
+
+	#venue {
+		.travel > * {
+			@include span-columns(12);
+		}
+	}
+
+// Chat
+
+	#slack {
+		h1 {
+			font-size: 1.5em;
+		}
+	}

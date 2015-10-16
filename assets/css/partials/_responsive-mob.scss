@@ -1,0 +1,33 @@
+// Header 
+
+	header ul {
+		display: none;
+	}
+
+// Hero
+
+	#hero {
+		h1 {
+			font-size: 1.5em;
+		}
+	}
+
+// FAQ 
+
+	#faq ul li {
+		@include span-columns(12);
+		width: 100% !important;
+		h2 {
+			cursor: pointer;
+		}
+	}
+
+// Data
+
+	#data ul li {
+		@include span-columns(12);
+		width: 100% !important;
+		p {
+			display: none;
+		}
+	}

@@ -16,3 +16,11 @@
 @import "partials/register";
 @import "partials/data";
 @import "partials/footer";
+
+@media screen and (max-width: 900px) {
+	@import "partials/responsive-tab";
+}
+
+@media screen and (max-width: 600px) {
+	@import "partials/responsive-mob";
+}

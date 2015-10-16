@@ -26,21 +26,14 @@
 	p {
 		margin-bottom: 0;
 	}
-	.partners {
-		.logo {
-			@include span-columns(2 of 6);
-			img {
-				width: 100%;
-			}
-		}
-	}
-	a.register,
-	a.video {
+	a.register {
 		@include material-button;
 		font-size: 1.25em;
+		margin-right: 1.5em;
+		margin-bottom: 1.5em;
 	}
 	a.video {
-		margin-left: 1.5em;
+		font-size: 1.25em;
 		@include material-button($accent, white);
 	}
 	.credit {
