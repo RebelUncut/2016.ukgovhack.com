@@ -74,3 +74,21 @@
 			font-size: 1.5em;
 		}
 	}
+
+// Register
+
+	#register {
+		.event {
+			@include span-columns(12);
+			&:first-child {
+				iframe {
+					height: 250px;
+				}
+			}
+			&:last-child {
+				iframe {
+					height: 310px;
+				}
+			}
+		}
+	}
