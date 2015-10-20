@@ -682,6 +682,31 @@ header {
         top: 4px;
         position: relative; }
 
+#updates {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem; }
+  #updates::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #updates h1 {
+    margin-top: 1em; }
+  #updates ul {
+    padding-left: 0; }
+    #updates ul li {
+      list-style-type: none;
+      text-align: center;
+      margin-bottom: 3em; }
+      #updates ul li a {
+        text-decoration: none;
+        color: #59595B; }
+      #updates ul li:last-child {
+        margin-bottom: 0; }
+    #updates ul h3 {
+      font-size: 1.5em; }
+
 #venue {
   max-width: 68rem;
   margin-left: auto;
