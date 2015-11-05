@@ -856,6 +856,21 @@ header {
           color: #377F90; }
       #data ul li p:last-child {
         margin-bottom: 0; }
+    #data ul .more li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #data ul .more li:last-child {
+        margin-right: 0; }
+      #data ul .more li h3 {
+        display: inline;
+        float: left;
+        margin-right: 1em; }
+      #data ul .more li p {
+        display: inline;
+        float: left;
+        margin-top: 2px; }
 
 #footer {
   width: 100%;
