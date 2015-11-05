@@ -34,5 +34,20 @@
 				}
 			}
 		}
+		.more {
+			li {
+				@include span-columns(12);
+				h3 {
+					display: inline;
+					float: left;
+					margin-right: 1em;	
+				}
+				p {
+					display: inline;
+					float: left;
+					margin-top: 2px;
+				}
+			}
+		}
 	}
 }
