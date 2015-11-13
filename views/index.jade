@@ -209,8 +209,9 @@ block content
 			function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.4984603,-0.14361729999995987),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.4984603, -0.14361729999995987)});infowindow = new google.maps.InfoWindow({content:"<b>National Audit Office</b><br/>Buckingham Palace Road<br/>SW1W 0PP London" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
 
 	section#slack: .wrapper
-		h1 Join the Slack Team for Accountability Hack
-		script(async, defer, src="http://46.101.14.142/slackin.js?large")
+		h1 Join the UKGovCamp Slack Channel
+		h2 Talk with other civic technologists before, during and after the event! 
+		script(src="https://slack.gov.camp/slackin.js?large")
 
 	section#register
 		h1 Register
