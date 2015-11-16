@@ -1,0 +1,57 @@
+#partner-descs {
+	@include outer-container;
+	margin-bottom: 3rem;
+	ul {
+		padding: 0 3rem;
+		color: $grey-dark;
+		li {
+			@include span-columns(12);
+			padding: 1em 0;
+			img {
+				@include span-columns(3 of 12);	
+			}
+			h2 {
+				display: none;
+			}
+			.content {
+				@include span-columns(9 of 12);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				p {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+			&.rebel {
+				img {
+					@include span-columns(1.5 of 12);
+				}
+				.content {
+					@include shift(1.5);
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1120px) {
+		ul li {
+			text-align: center;
+			img {
+				display: none;
+			}
+			h2,
+			.content {
+				@include span-columns(12);
+			}
+			&.rebel {
+				img {
+					display: none;
+				}
+				.content {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
