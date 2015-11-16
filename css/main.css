@@ -787,7 +787,10 @@ header {
   #slack h1 {
     margin-bottom: 0; }
   #slack h2 {
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
+  #slack a {
+    margin-bottom: 1rem;
+    display: block; }
 
 #register {
   max-width: 68rem;
@@ -805,13 +808,6 @@ header {
   #register iframe {
     width: 100%;
     height: 394px; }
-  #register .event {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    #register .event:last-child {
-      margin-right: 0; }
 
 #data {
   max-width: 68rem;
@@ -875,6 +871,76 @@ header {
         display: inline;
         float: left;
         margin-top: 2px; }
+
+#partner-descs {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem; }
+  #partner-descs::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #partner-descs ul {
+    padding: 0 3rem;
+    color: #59595B; }
+    #partner-descs ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 1em 0; }
+      #partner-descs ul li:last-child {
+        margin-right: 0; }
+      #partner-descs ul li img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        #partner-descs ul li img:last-child {
+          margin-right: 0; }
+      #partner-descs ul li h2 {
+        display: none; }
+      #partner-descs ul li .content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #partner-descs ul li .content:last-child {
+          margin-right: 0; }
+        #partner-descs ul li .content p {
+          margin-top: 0;
+          margin-bottom: 0; }
+      #partner-descs ul li.rebel img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 10.43705%; }
+        #partner-descs ul li.rebel img:last-child {
+          margin-right: 0; }
+      #partner-descs ul li.rebel .content {
+        margin-left: 12.79471%; }
+  @media screen and (max-width: 1120px) {
+    #partner-descs ul li {
+      text-align: center; }
+      #partner-descs ul li img {
+        display: none; }
+      #partner-descs ul li h2,
+      #partner-descs ul li .content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #partner-descs ul li h2:last-child,
+        #partner-descs ul li .content:last-child {
+          margin-right: 0; }
+      #partner-descs ul li.rebel img {
+        display: none; }
+      #partner-descs ul li.rebel .content {
+        margin-left: 0; } }
 
 #footer {
   width: 100%;

@@ -25,6 +25,8 @@ $("#schedule nav h2").click(function() {
 	$("#schedule ul").filter("#" + clickedItem).addClass("active");
 });
 
+$("#partners li > *").matchHeight();
+
 // Res
 
 $(document).ready(function() {
