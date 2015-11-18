@@ -455,7 +455,7 @@ header {
     display: inline-block;
     padding-left: 0;
     margin: 0;
-    float: right; }
+    margin-left: 0.375em; }
     header ul li {
       display: inline-block; }
       header ul li a {
@@ -951,6 +951,60 @@ header {
     padding: 1em;
     margin: 0;
     text-align: center; }
+
+#conduct {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem; }
+  #conduct::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #conduct h1.page-title,
+  #conduct h2 {
+    color: #377F90;
+    margin-bottom: 2rem; }
+  #conduct h2 {
+    margin-top: 2rem; }
+  #conduct article strong {
+    color: #377F90; }
+
+#personas {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem; }
+  #personas::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #personas h1.page-title,
+  #personas h2 {
+    color: #377F90;
+    margin-bottom: 2rem; }
+  #personas h2 {
+    margin-top: 2rem; }
+  #personas h1.page-title.users {
+    margin-top: 4rem; }
+
+#submit {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem; }
+  #submit::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #submit h1.page-title,
+  #submit h2 {
+    color: #377F90;
+    margin-bottom: 2rem; }
+  #submit h2 {
+    margin-top: 2rem; }
+  #submit article strong {
+    color: #377F90; }
 
 @media screen and (max-width: 900px) {
   header a.brand {
