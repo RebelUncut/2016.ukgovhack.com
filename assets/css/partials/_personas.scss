@@ -1,0 +1,15 @@
+#personas {
+	@include outer-container;
+	padding: 3rem;
+	h1.page-title,
+	h2 {
+		color: $accent;
+		margin-bottom: 2rem;
+	}
+	h2 {
+		margin-top: 2rem;
+	}
+	h1.page-title.users {
+		margin-top: 4rem;
+	}
+}

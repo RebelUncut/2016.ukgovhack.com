@@ -19,6 +19,10 @@
 @import "partials/partners";
 @import "partials/footer";
 
+@import "partials/conduct";
+@import "partials/personas";
+@import "partials/submit";
+
 @media screen and (max-width: 900px) {
 	@import "partials/responsive-tab";
 }
