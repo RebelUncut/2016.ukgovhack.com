@@ -46,6 +46,7 @@
 	#challenges {
 		ul li {
 			@include span-columns(12);
+			width: 100%	!important;
 		}
 	}
 

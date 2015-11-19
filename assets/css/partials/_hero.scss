@@ -26,6 +26,10 @@
 	p {
 		margin-bottom: 0;
 	}
+	img.logo {
+		height: 3rem;
+		margin-bottom: 1rem;
+	}
 	a.register {
 		@include material-button;
 		font-size: 1.25em;

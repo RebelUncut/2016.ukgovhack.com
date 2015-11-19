@@ -7,16 +7,6 @@ header {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	a.brand {
-		display: inline-block;
-		padding: $header-spacing;
-		background: $accent__dark;
-		h1 {
-			display: inline;
-			color: white;
-			font-size: inherit;
-		}
-	}
 	ul {
 		display: inline-block;
 		padding-left: 0;
@@ -29,17 +19,8 @@ header {
 				color: white;
 				display: block;
 			}
-			&.register {
-				a {
-					padding: $header-spacing;
-					background: $secondary;
-					margin-left: $header-spacing / 2;
-					color: $grey-dark;
-					font-weight: bold;
-					&:hover {
-						background: $secondary__dark;
-					}
-				}
+			img {
+				height: 0.8rem;
 			}
 		}
 	}

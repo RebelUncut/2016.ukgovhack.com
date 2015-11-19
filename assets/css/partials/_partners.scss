@@ -31,6 +31,16 @@
 					@include shift(1.5);
 				}
 			}
+			&.kontakt,
+			&.aws,
+			&.estimote {
+				img {
+					@include span-columns(2 of 12);
+				}
+				.content {
+					@include shift(1);
+				}
+			}
 		}
 	}
 
