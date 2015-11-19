@@ -1,0 +1,25 @@
+#credits {
+	@include outer-container;
+	padding: 3rem;
+	h1.page-title,
+	h2 {
+		color: $accent;
+		margin-bottom: 2rem;
+	}
+	h2 {
+		margin-top: 2rem;
+	}
+	img {
+		height: 5rem;
+	}
+	article strong {
+		color: $accent;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style-type: none;
+			margin-bottom: 3rem;
+		}
+	}
+}

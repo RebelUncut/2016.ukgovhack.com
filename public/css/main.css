@@ -1028,6 +1028,31 @@ header {
   #submit article strong {
     color: #377F90; }
 
+#credits {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem; }
+  #credits::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #credits h1.page-title,
+  #credits h2 {
+    color: #377F90;
+    margin-bottom: 2rem; }
+  #credits h2 {
+    margin-top: 2rem; }
+  #credits img {
+    height: 5rem; }
+  #credits article strong {
+    color: #377F90; }
+  #credits ul {
+    padding-left: 0; }
+    #credits ul li {
+      list-style-type: none;
+      margin-bottom: 3rem; }
+
 @media screen and (max-width: 900px) {
   header a.brand {
     display: block;
