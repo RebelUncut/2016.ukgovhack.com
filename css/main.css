@@ -443,14 +443,6 @@ header {
   header a {
     text-decoration: none;
     text-transform: uppercase; }
-  header a.brand {
-    display: inline-block;
-    padding: 0.75em;
-    background: #224e59; }
-    header a.brand h1 {
-      display: inline;
-      color: white;
-      font-size: inherit; }
   header ul {
     display: inline-block;
     padding-left: 0;
@@ -462,14 +454,8 @@ header {
         padding: 0.75em 0.375em;
         color: white;
         display: block; }
-      header ul li.register a {
-        padding: 0.75em;
-        background: #E3DD46;
-        margin-left: 0.375em;
-        color: #59595B;
-        font-weight: bold; }
-        header ul li.register a:hover {
-          background: #c0b91d; }
+      header ul li img {
+        height: 0.8rem; }
 
 #hero {
   float: left;
@@ -503,6 +489,9 @@ header {
     margin-bottom: 0.25rem; }
   #hero p {
     margin-bottom: 0; }
+  #hero img.logo {
+    height: 3rem;
+    margin-bottom: 1rem; }
   #hero a.register {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #E3DD46;
@@ -580,26 +569,26 @@ header {
       content: "";
       display: table; }
 
-#faq, #challenges {
+#faq, #challenges-page {
   max-width: 68rem;
   margin-left: auto;
   margin-right: auto;
   padding: 3rem 3rem 0 3rem;
   overflow: auto; }
-  #faq::after, #challenges::after {
+  #faq::after, #challenges-page::after {
     clear: both;
     content: "";
     display: table; }
-  #faq ul, #challenges ul {
+  #faq ul, #challenges-page ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     padding-left: 0;
     margin-top: 0; }
-    #faq ul:last-child, #challenges ul:last-child {
+    #faq ul:last-child, #challenges-page ul:last-child {
       margin-right: 0; }
-    #faq ul li, #challenges ul li {
+    #faq ul li, #challenges-page ul li {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -609,52 +598,70 @@ header {
       padding: 1.5em;
       margin-bottom: 1.5em;
       color: #59595B; }
-      #faq ul li:last-child, #challenges ul li:last-child {
+      #faq ul li:last-child, #challenges-page ul li:last-child {
         margin-right: 0; }
-      #faq ul li:first-child, #challenges ul li:first-child {
+      #faq ul li:first-child, #challenges-page ul li:first-child {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 65.88078%; }
-        #faq ul li:first-child:last-child, #challenges ul li:first-child:last-child {
+        #faq ul li:first-child:last-child, #challenges-page ul li:first-child:last-child {
           margin-right: 0; }
-      #faq ul li:nth-child(3n+2), #challenges ul li:nth-child(3n+2) {
+      #faq ul li:nth-child(3n+2), #challenges-page ul li:nth-child(3n+2) {
         margin-right: 0; }
-      #faq ul li p:last-child, #challenges ul li p:last-child {
+      #faq ul li p:last-child, #challenges-page ul li p:last-child {
         margin-bottom: 0; }
 
-#challenges {
-  padding-bottom: 3rem; }
-  #challenges h1 {
-    margin-bottom: 0.5em; }
-  #challenges > h2 {
+#challenges-page {
+  padding: 3rem; }
+  #challenges-page h1.page-title {
+    color: #377F90;
+    margin-bottom: 2rem; }
+  #challenges-page #challenges > h2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     font-weight: 400;
-    text-align: center;
     margin-bottom: 1.5em; }
-    #challenges > h2:last-child {
+    #challenges-page #challenges > h2:last-child {
       margin-right: 0; }
-  #challenges ul li {
+  #challenges-page ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    #challenges ul li img {
+    #challenges-page ul li img {
       height: 2rem; }
-    #challenges ul li h3 {
+    #challenges-page ul li h3 {
       font-size: 26px; }
-    #challenges ul li:last-child {
+    #challenges-page ul li:last-child {
       margin-right: 0; }
-    #challenges ul li:first-child {
+    #challenges-page ul li:first-child {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%; }
-      #challenges ul li:first-child:last-child {
+      #challenges-page ul li:first-child:last-child {
         margin-right: 0; }
+  #challenges-page #judges h1.page-title {
+    max-width: 68rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem; }
+    #challenges-page #judges h1.page-title::after {
+      clear: both;
+      content: "";
+      display: table; }
+  #challenges-page #judges ul li img {
+    height: 6rem; }
+  #challenges-page #judges ul li h2 {
+    margin-top: 1em; }
+  #challenges-page #judges ul li p {
+    font-weight: bold;
+    margin-bottom: 0; }
+    #challenges-page #judges ul li p:last-child {
+      margin-top: 0; }
 
 #sign-up-block {
   background: #377F90;
@@ -923,6 +930,21 @@ header {
           margin-right: 0; }
       #partner-descs ul li.rebel .content {
         margin-left: 12.79471%; }
+      #partner-descs ul li.kontakt img,
+      #partner-descs ul li.aws img,
+      #partner-descs ul li.estimote img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+        #partner-descs ul li.kontakt img:last-child,
+        #partner-descs ul li.aws img:last-child,
+        #partner-descs ul li.estimote img:last-child {
+          margin-right: 0; }
+      #partner-descs ul li.kontakt .content,
+      #partner-descs ul li.aws .content,
+      #partner-descs ul li.estimote .content {
+        margin-left: 8.5298%; }
   @media screen and (max-width: 1120px) {
     #partner-descs ul li {
       text-align: center; }
@@ -1023,32 +1045,33 @@ header {
     width: 100%; }
     #hero .content:last-child {
       margin-right: 0; }
-  #faq ul li, #challenges ul li {
+  #faq ul li, #challenges-page ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    #faq ul li:last-child, #challenges ul li:last-child {
+    #faq ul li:last-child, #challenges-page ul li:last-child {
       margin-right: 0; }
-    #faq ul li:first-child, #challenges ul li:first-child {
+    #faq ul li:first-child, #challenges-page ul li:first-child {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      #faq ul li:first-child:last-child, #challenges ul li:first-child:last-child {
+      #faq ul li:first-child:last-child, #challenges-page ul li:first-child:last-child {
         margin-right: 0; }
-    #faq ul li:nth-child(3n+2):nth-child(n), #challenges ul li:nth-child(3n+2):nth-child(n) {
+    #faq ul li:nth-child(3n+2):nth-child(n), #challenges-page ul li:nth-child(3n+2):nth-child(n) {
       margin-right: 2.35765%; }
-    #faq ul li:nth-child(3n+2):nth-child(n+1), #challenges ul li:nth-child(3n+2):nth-child(n+1) {
+    #faq ul li:nth-child(3n+2):nth-child(n+1), #challenges-page ul li:nth-child(3n+2):nth-child(n+1) {
       clear: none; }
-    #faq ul li:nth-child(2n+3), #challenges ul li:nth-child(2n+3) {
+    #faq ul li:nth-child(2n+3), #challenges-page ul li:nth-child(2n+3) {
       margin-right: 0;
       margin-right: 0 !important; }
   #challenges ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    width: 100%	!important; }
     #challenges ul li:last-child {
       margin-right: 0; }
   #data ul li {
@@ -1103,15 +1126,15 @@ header {
       margin-bottom: 2em; }
   #about .content {
     font-size: 1em; }
-  #faq ul li, #challenges ul li {
+  #faq ul li, #challenges-page ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     width: 100% !important; }
-    #faq ul li:last-child, #challenges ul li:last-child {
+    #faq ul li:last-child, #challenges-page ul li:last-child {
       margin-right: 0; }
-    #faq ul li h2, #challenges ul li h2 {
+    #faq ul li h2, #challenges-page ul li h2 {
       cursor: pointer;
       font-size: 1em; }
   #challenges h2 {
