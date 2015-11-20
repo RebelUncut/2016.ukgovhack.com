@@ -9,9 +9,20 @@
 			background: $accent;
 			width: 100%;
 			text-align: center;
+			margin: 1em 0;
 			li {
-				&.register {
-					display: none;
+				a {
+					padding-top: 0;
+				}
+				&:first-child {
+					width: 100%;
+					margin-top: 1.5em;
+					margin-bottom: 1em;
+					img {
+						display: block;
+						height: 1.5em;
+						margin: 0 auto;
+					}
 				}
 			}
 		}
