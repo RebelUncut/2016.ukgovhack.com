@@ -1060,9 +1060,18 @@ header {
   header ul {
     background: #377F90;
     width: 100%;
-    text-align: center; }
-    header ul li.register {
-      display: none; }
+    text-align: center;
+    margin: 1em 0; }
+    header ul li a {
+      padding-top: 0; }
+    header ul li:first-child {
+      width: 100%;
+      margin-top: 1.5em;
+      margin-bottom: 1em; }
+      header ul li:first-child img {
+        display: block;
+        height: 1.5em;
+        margin: 0 auto; }
   #hero .content {
     float: left;
     display: block;
@@ -1138,8 +1147,6 @@ header {
 @media screen and (max-width: 600px) {
   section > h1 {
     font-size: 2em; }
-  header ul {
-    display: none; }
   #hero * {
     font-size: 1em; }
   #hero a {
