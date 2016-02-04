@@ -1,0 +1,12 @@
+extends partials/layout
+
+block content
+
+	#content-page
+
+		h1.page-title Challenges
+
+		article
+			p We’re currently putting together the challenges for the hackathon, and will make details available as soon as we have them. 
+
+			p If you would like to suggest a challenge or a theme, we’d love to hear from you. 
