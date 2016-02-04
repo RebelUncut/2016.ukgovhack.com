@@ -1,9 +1,12 @@
-$teal: #377F90;
-$green: #E3DD46;
+$blue: #3F579C;
+$red: #C4494D;
 $grey-dark: #59595B;
 
-$accent: $teal;
-$secondary: $green;
+$teal: $blue;
+$green: $red;
+
+$accent: $blue;
+$secondary: $red;
 
 $accent__dark: darken($accent, 15%);
 $secondary__dark: darken($secondary, 15%);

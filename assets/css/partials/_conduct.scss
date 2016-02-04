@@ -1,4 +1,4 @@
-#conduct {
+#content-page {
 	@include outer-container;
 	padding: 3rem;
 	h1.page-title,
@@ -11,5 +11,19 @@
 	}
 	article strong {
 		color: $accent;
+	}
+	ul.types {
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			@include span-columns(6 of 12);
+			@include material-box;
+			padding: 20px;
+			margin-top: 1em;
+			h2 {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
 	}
 }

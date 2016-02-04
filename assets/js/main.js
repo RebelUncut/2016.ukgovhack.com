@@ -26,6 +26,7 @@ $("#schedule nav h2").click(function() {
 });
 
 $("#partners li > *").matchHeight();
+$("#content-page ul.types li").matchHeight();
 
 // Res
 

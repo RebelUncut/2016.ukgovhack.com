@@ -77,3 +77,14 @@
 			font-size: 1em;
 		}
 	}
+
+// Sponsor blocks
+
+#content-page ul.types {
+	li {
+		@include span-columns(12 of 12);
+		&:first-child {
+			margin-bottom: 1em;
+		}
+	}
+}

@@ -8,21 +8,36 @@ html
         script(src="https://use.typekit.net/stx0six.js")
         script(type='text/javascript').
             try{Typekit.load({ async: true });}catch(e){}
-        title Accountability Hack
+        title UKGovHack
+        link(href='https://fonts.googleapis.com/css?family=Bangers', rel='stylesheet', type='text/css')
         != css()
 
     body
         header
             ul
-                li: a.brand(href="http://accountabilityhack.org"): img(src="img/logos/ah.png")
-                li: a(href="http://accountabilityhack.org/") Home
-                li: a(href="http://accountabilityhack.org/pre") Pre-Event
-                li: a(href="http://accountabilityhack.org/personas") Users
-                li: a(href="http://accountabilityhack.org/conduct") Conduct
-                li: a(href="http://accountabilityhack.org/challenges") Challenges
-                li: a(href="http://accountabilityhack.org/submit") Submit Project
+                li: a.brand(href="/"): b UKGovHack 2016
+                li: a(href="/") Home
+                li: a(href="/hackathon") Hackathon
+                li: a(href="/conference") Conference
+                li: a(href="/sponsors") Sponsors
+                li: a(href="/schedule") Schedule
+                li: a(href="/conduct") Conduct
+                li: a(href="/tickets") Tickets
 
-        block content
+        #page-wrapper
+            block content
+
+        footer
+            .wrapper.outer
+                .flex
+                    a.logo(href="http://rebellabs.co.uk")
+                        img(src="img/labs-white.svg" alt="Rebel Labs Logo")
+                    ul
+                        li: a(href="https://github.com/RebelUncut/ukgovhack.co.uk", target="_blank") Github (we accept PRs)
+                        li: a(href="http://rebellabs.co.uk", target="_blank") A Rebel Labs Project
+                        li: a(href="mailto:rebellion@rebellabs.co.uk") Contact
+                #join
+                    h2 #JoinTheRebellion
 
         script(src="https://code.jquery.com/jquery-2.1.4.min.js")
         script(src="js/magnific.js")

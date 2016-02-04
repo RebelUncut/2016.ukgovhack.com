@@ -1,4 +1,4 @@
-@mixin material-button($color: $green, $text: $grey-dark) {
+@mixin material-button($color: $green, $text: white) {
 	@include material-box;
 	background: $color;
 	padding: 0.5em 1em;
