@@ -88,3 +88,18 @@
 		}
 	}
 }
+
+
+// Footer
+
+footer {
+	.flex {
+		justify-content: center;
+	}
+	ul {
+		display: none;
+	}
+	#join h2 {
+		margin-bottom: 0.5rem;
+	}
+}
