@@ -1241,6 +1241,12 @@ body {
     #content-page ul.types li:last-child {
       margin-right: 0; }
     #content-page ul.types li:first-child {
-      margin-bottom: 1em; } }
+      margin-bottom: 1em; }
+  footer .flex {
+    justify-content: center; }
+  footer ul {
+    display: none; }
+  footer #join h2 {
+    margin-bottom: 0.5rem; } }
 
  /*# sourceMappingURL=main.css.map */
