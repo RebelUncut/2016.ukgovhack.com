@@ -24,8 +24,26 @@
 @import "partials/submit";
 @import "partials/credits";
 
+#content-page .btn-group {
+	display: inline-block;
+	margin-top: 1em;
+	a {
+		@include material-button;
+		margin-right: 1.25em;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	@import "partials/responsive-tab";
+	#content-page .btn-group {
+		margin-top: 0;
+		width: 100%;
+		a {
+			margin-right: 0;
+			display: block;
+			margin-top: 1.25em;
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {

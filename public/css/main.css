@@ -1104,6 +1104,28 @@ body {
       list-style-type: none;
       margin-bottom: 3rem; }
 
+#content-page .btn-group {
+  display: inline-block;
+  margin-top: 1em; }
+  #content-page .btn-group a {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: #C4494D;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin-right: 1.25em; }
+    #content-page .btn-group a:hover {
+      background: #912f32;
+      cursor: pointer; }
+    #content-page .btn-group a:active {
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+      top: 4px;
+      position: relative; }
+
 @media screen and (max-width: 900px) {
   header a.brand {
     display: block;
@@ -1194,7 +1216,14 @@ body {
     #register .event:first-child iframe {
       height: 250px; }
     #register .event:last-child iframe {
-      height: 310px; } }
+      height: 310px; }
+  #content-page .btn-group {
+    margin-top: 0;
+    width: 100%; }
+    #content-page .btn-group a {
+      margin-right: 0;
+      display: block;
+      margin-top: 1.25em; } }
 
 @media screen and (max-width: 600px) {
   section > h1 {
