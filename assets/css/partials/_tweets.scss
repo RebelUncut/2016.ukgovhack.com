@@ -1,0 +1,10 @@
+#tweets {
+    .content {
+        @include outer-container;
+        padding: 3em;
+        iframe {
+            display: block !important;
+            margin: 0 auto;
+        }
+    }
+} 

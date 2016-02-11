@@ -510,6 +510,8 @@ header {
       box-shadow: 0 3px 2px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
       top: 4px;
       position: relative; }
+  #hero a.volunteer {
+    color: white; }
   #hero a.video {
     font-size: 1.25em;
     margin-bottom: 1.5em;
@@ -551,6 +553,7 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  color: white;
   background: #3F579C; }
   #about:last-child {
     margin-right: 0; }
@@ -560,7 +563,6 @@ header {
     margin-right: auto;
     padding: 3rem;
     text-align: left;
-    color: white;
     font-size: 1.25em; }
     #about .content::after {
       clear: both;
@@ -1008,6 +1010,19 @@ body {
   flex-direction: column; }
   body #page-wrapper {
     flex: 1; }
+
+#tweets .content {
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em; }
+  #tweets .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #tweets .content iframe {
+    display: block !important;
+    margin: 0 auto; }
 
 #content-page {
   max-width: 68rem;

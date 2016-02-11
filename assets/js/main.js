@@ -44,8 +44,16 @@ function checkSize(){
             $(this).parent().children("p").slideDown("fast");
         });
 
-
-
-
     }
 }
+
+var config2 = {
+  "id": '347099293930377217',
+  "domId": 'tweet-container',
+  "maxTweets": 5,
+  "enableLinks": true,
+  "showUser": true,
+  "showTime": true,
+  "lang": 'en'
+};
+twitterFetcher.fetch(config2);
