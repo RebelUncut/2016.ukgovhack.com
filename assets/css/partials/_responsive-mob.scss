@@ -103,3 +103,35 @@ footer {
 		margin-bottom: 0.5rem;
 	}
 }
+
+// Schedule
+
+table.schedule {
+	tr {
+		th,
+		td {
+			border: none;
+			padding: 0.5em;
+			text-align: left;
+			width: 100%;
+			display: block;
+			&:first-child {
+				border-right: none;
+			}
+		}
+		th {
+			display: none;
+		}
+		td {
+			&:first-child {
+				font-weight: bold;
+			}
+			&[colspan="3"] {
+				border: none;
+			}
+			&.x {
+				display: none;
+			}
+		}
+	}
+}

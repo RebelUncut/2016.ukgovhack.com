@@ -1,0 +1,35 @@
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  tr {
+    th, 
+    td {
+      border: none;
+      padding: 0.5em;
+      text-align: left;
+      width: 25%;
+      vertical-align: text-top;
+      &:first-child {
+        border-right: 1px solid #DFDFDF;
+      }
+    }
+    th {
+      &.h {
+        color: $blue;
+      }
+      &.c {
+        color: $red;
+      }
+    }
+    td {
+      &[colspan="3"] {
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+      }
+      &.x {
+        background: #DFDFDF;
+      }
+    }
+  }
+}
