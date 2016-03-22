@@ -1232,6 +1232,12 @@ table.schedule {
   .list.orgs .qinetiq a {
     color: white; }
 
+.list.orgs .ukgovcamp {
+  background: white;
+  color: #59595B; }
+  .list.orgs .ukgovcamp a {
+    color: #59595B; }
+
 .interested {
   max-width: 68rem;
   margin-left: auto;
