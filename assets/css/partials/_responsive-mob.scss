@@ -30,7 +30,7 @@
 	}
 
 
-// FAQ 
+// FAQ
 
 	#faq ul li {
 		@include span-columns(12);
@@ -41,7 +41,7 @@
 		}
 	}
 
-// Challenges 
+// Challenges
 
 	#challenges {
 		h2 {
@@ -64,7 +64,7 @@
 		display: none;
 	}
 
-// Venue 
+// Venue
 
 	#venue {
 		display: none;
@@ -135,3 +135,19 @@ table.schedule {
 		}
 	}
 }
+
+// Sponsors
+
+	.list.orgs {
+		li {
+			.left {
+				@include span-columns(12 of 12);
+				img {
+					@include span-columns(12 of 12);
+				}
+			}
+			.right {
+				display: none !important;
+			}
+		}
+	}

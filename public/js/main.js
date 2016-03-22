@@ -16,17 +16,18 @@ $("#faq li, #challenges li, #data li, #venue .travel > *").matchHeight();
 $('#hero a.video').magnificPopup({ items: { src: 'https://www.youtube.com/watch?v=pfqh14ZaMfg' }, type: 'iframe' });
 
 $("#schedule nav h2").click(function() {
-	var clickedItem = $(this).attr("id");
+    var clickedItem = $(this).attr("id");
 
-	$("#schedule nav h2").removeClass("active");
-	$(this).addClass("active");
+    $("#schedule nav h2").removeClass("active");
+    $(this).addClass("active");
 
-	$("#schedule ul").removeClass("active");
-	$("#schedule ul").filter("#" + clickedItem).addClass("active");
+    $("#schedule ul").removeClass("active");
+    $("#schedule ul").filter("#" + clickedItem).addClass("active");
 });
 
 $("#partners li > *").matchHeight();
 $("#content-page ul.types li").matchHeight();
+$(".list.orgs li .match").matchHeight();
 
 // Res
 

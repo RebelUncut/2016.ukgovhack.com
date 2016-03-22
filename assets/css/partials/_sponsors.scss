@@ -1,0 +1,70 @@
+.list.orgs {
+    h2 {
+        @include outer-container;
+        padding: 0 3rem;
+    }
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    li {
+        list-style: none;
+        a {
+            .wrapper {
+                @include outer-container;
+                padding: 3rem;
+            }
+        }
+        .match {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left {
+            @include span-columns(4 of 12);
+            img {
+                width: 100%;
+            }
+        }
+        .right {
+            @include span-columns(7 of 12);
+            @include shift(1 of 12);
+            p {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    &.partners ul {
+        margin-bottom: 3rem;
+    }
+
+    @mixin org($class, $bg-color, $text-color: white) {
+        .#{$class} {
+            background: $bg-color;
+            color: $text-color;
+            a {
+                color: $text-color;
+            }
+        }
+    }
+
+    @include org(parli, #1F5592, white);
+    @include org(nao, #373737, white);
+    @include org(futuregov, #e4297e, white);
+    @include org(github, #333, white);
+    @include org(twilio, #e12127, white);
+    @include org(qinetiq, #3E97D4, white);
+}
+
+.interested {
+    @include outer-container;
+    padding: 0 3rem;
+    a {
+        font-size: 1.25em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: block;
+        text-decoration: none;
+    }
+}

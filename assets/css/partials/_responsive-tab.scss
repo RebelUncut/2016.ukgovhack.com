@@ -35,7 +35,7 @@
 		@include span-columns(12);
 	}
 
-// FAQ 
+// FAQ
 
 	#faq {
 		ul li {
@@ -62,7 +62,7 @@
 		}
 	}
 
-// Data 
+// Data
 
 	#data {
 		ul li {
@@ -72,7 +72,7 @@
 		}
 	}
 
-// Venue 
+// Venue
 
 	#venue {
 		.travel > * {
@@ -101,6 +101,26 @@
 			&:last-child {
 				iframe {
 					height: 310px;
+				}
+			}
+		}
+	}
+
+// Sponsors
+
+	.list.orgs {
+		li {
+			.left {
+				@include span-columns(12 of 12);
+				img {
+					@include span-columns(6 of 12);
+				}
+			}
+			.right {
+				@include shift(0);
+				@include span-columns(12 of 12);
+				p {
+					margin-top: 1em;
 				}
 			}
 		}
