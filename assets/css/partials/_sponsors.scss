@@ -55,6 +55,7 @@
     @include org(github, #333, white);
     @include org(twilio, #e12127, white);
     @include org(qinetiq, #3E97D4, white);
+    @include org(ukgovcamp, white, $grey-dark);
 }
 
 .interested {
