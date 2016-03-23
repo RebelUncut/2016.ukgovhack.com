@@ -3,15 +3,23 @@ table.schedule {
   border-collapse: collapse;
   border-spacing: 0;
   tr {
-    th, 
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    th,
     td {
       border: none;
       padding: 0.5em;
       text-align: left;
-      width: 25%;
       vertical-align: text-top;
+      width: 22.5%;
+      border-right: 1px solid #DFDFDF;
+      a {
+        color: #adadad;
+        font-style: italic;
+      }
       &:first-child {
         border-right: 1px solid #DFDFDF;
+        width: 10%;
       }
     }
     th {
@@ -23,10 +31,6 @@ table.schedule {
       }
     }
     td {
-      &[colspan="3"] {
-        border-top: 1px solid #dfdfdf;
-        border-bottom: 1px solid #dfdfdf;
-      }
       &.x {
         background: #DFDFDF;
       }

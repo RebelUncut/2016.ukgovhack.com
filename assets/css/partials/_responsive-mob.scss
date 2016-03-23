@@ -125,6 +125,7 @@ table.schedule {
 		td {
 			&:first-child {
 				font-weight: bold;
+				width: 100%;
 			}
 			&[colspan="3"] {
 				border: none;

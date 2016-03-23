@@ -56,6 +56,8 @@
     @include org(twilio, #e12127, white);
     @include org(qinetiq, #3E97D4, white);
     @include org(ukgovcamp, white, $grey-dark);
+    @include org(dxw, #4BA4D9, white);
+    @include org(odi, black, white);
 }
 
 .interested {
