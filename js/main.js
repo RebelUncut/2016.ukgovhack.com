@@ -58,3 +58,9 @@ var config2 = {
   "lang": 'en'
 };
 twitterFetcher.fetch(config2);
+
+$("td").each(function(){
+  if($(this).is(":empty")) {
+    $(this).remove();
+  }
+});

@@ -1028,25 +1028,31 @@ table.schedule {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0; }
-  table.schedule tr th,
-  table.schedule tr td {
-    border: none;
-    padding: 0.5em;
-    text-align: left;
-    width: 25%;
-    vertical-align: text-top; }
-    table.schedule tr th:first-child,
-    table.schedule tr td:first-child {
-      border-right: 1px solid #DFDFDF; }
-  table.schedule tr th.h {
-    color: #3F579C; }
-  table.schedule tr th.c {
-    color: #C4494D; }
-  table.schedule tr td[colspan="3"] {
+  table.schedule tr {
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf; }
-  table.schedule tr td.x {
-    background: #DFDFDF; }
+    table.schedule tr th,
+    table.schedule tr td {
+      border: none;
+      padding: 0.5em;
+      text-align: left;
+      vertical-align: text-top;
+      width: 22.5%;
+      border-right: 1px solid #DFDFDF; }
+      table.schedule tr th a,
+      table.schedule tr td a {
+        color: #adadad;
+        font-style: italic; }
+      table.schedule tr th:first-child,
+      table.schedule tr td:first-child {
+        border-right: 1px solid #DFDFDF;
+        width: 10%; }
+    table.schedule tr th.h {
+      color: #3F579C; }
+    table.schedule tr th.c {
+      color: #C4494D; }
+    table.schedule tr td.x {
+      background: #DFDFDF; }
 
 #content-page {
   max-width: 68rem;
@@ -1237,6 +1243,18 @@ table.schedule {
   color: #59595B; }
   .list.orgs .ukgovcamp a {
     color: #59595B; }
+
+.list.orgs .dxw {
+  background: #4BA4D9;
+  color: white; }
+  .list.orgs .dxw a {
+    color: white; }
+
+.list.orgs .odi {
+  background: black;
+  color: white; }
+  .list.orgs .odi a {
+    color: white; }
 
 .interested {
   max-width: 68rem;
@@ -1464,7 +1482,8 @@ table.schedule {
   table.schedule tr th {
     display: none; }
   table.schedule tr td:first-child {
-    font-weight: bold; }
+    font-weight: bold;
+    width: 100%; }
   table.schedule tr td[colspan="3"] {
     border: none; }
   table.schedule tr td.x {
