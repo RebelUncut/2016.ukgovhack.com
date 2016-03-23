@@ -126,6 +126,10 @@ table.schedule {
 			&:first-child {
 				font-weight: bold;
 				width: 100%;
+				padding-top: 1.25em;
+			}
+			&:last-child {
+				padding-bottom: 1.25em;
 			}
 			&[colspan="3"] {
 				border: none;

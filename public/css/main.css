@@ -1483,7 +1483,10 @@ table.schedule {
     display: none; }
   table.schedule tr td:first-child {
     font-weight: bold;
-    width: 100%; }
+    width: 100%;
+    padding-top: 1.25em; }
+  table.schedule tr td:last-child {
+    padding-bottom: 1.25em; }
   table.schedule tr td[colspan="3"] {
     border: none; }
   table.schedule tr td.x {

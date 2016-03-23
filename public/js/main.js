@@ -31,10 +31,6 @@ $(".list.orgs li .match").matchHeight();
 
 // Res
 
-$(document).ready(function() {
-    checkSize();
-    $(window).resize(checkSize);
-});
 
 function checkSize(){
     if ($("header ul").css("display") == "none" ){
@@ -48,19 +44,22 @@ function checkSize(){
     }
 }
 
-var config2 = {
-  "id": '347099293930377217',
-  "domId": 'tweet-container',
-  "maxTweets": 5,
-  "enableLinks": true,
-  "showUser": true,
-  "showTime": true,
-  "lang": 'en'
-};
-twitterFetcher.fetch(config2);
 
-$("td").each(function(){
-  if($(this).is(":empty")) {
-    $(this).remove();
-  }
+function hideEmptySlots(){
+    if ($(".list.orgs li .right").css("display") == "none" ){
+        $("td").each(function(){
+            if($(this).is(":empty")) {
+                $(this).remove();
+            }
+        });
+    }
+}
+
+$(document).ready(function() {
+    checkSize();
+    $(window).resize(checkSize);
+
+    hideEmptySlots();
+    $(window).resize(hideEmptySlots());
 });
+
