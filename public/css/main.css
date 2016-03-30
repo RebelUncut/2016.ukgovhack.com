@@ -1256,6 +1256,12 @@ table.schedule {
   .list.orgs .odi a {
     color: white; }
 
+.list.orgs .sendgrid {
+  background: #3A87DC;
+  color: white; }
+  .list.orgs .sendgrid a {
+    color: white; }
+
 .interested {
   max-width: 68rem;
   margin-left: auto;
